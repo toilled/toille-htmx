@@ -1,0 +1,5 @@
+<header>
+    <h2 class="title">Home</h2>
+</header>
+<p>This is my home page for testing ideas built using HTMX. This may change at times as I experiment with ideas I have.</p>
+<p class="marginless">The source code for this site is available on <a href="https://github.com/toilled/toille-htmx" target="_blank">this GitHub repository</a>.</p>

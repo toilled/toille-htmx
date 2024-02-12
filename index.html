@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliot Dickerson</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="index.css" />
+</head>
+
+<body class="container">
+    <nav>
+        <ul class="animate__animated animate__fadeInLeft question">
+            <li>
+                <hgroup>
+                    <h1 class="title animate__animated">Elliot Dickerson</h1>
+                    <h2 class="title animate__animated">A site to test things</h2>
+                </hgroup>
+            </li>
+        </ul>
+        <ul class="animate__animated animate__fadeInRight">
+            <li><a class="pointer" hx-post="pages/1" hx-trigger="click" hx-target="#content">Home</a></li>
+            <li><a class="pointer" hx-post="pages/2" hx-trigger="click" hx-target="#content">About</a></li>
+            <li><a class="pointer" hx-post="pages/3" hx-trigger="click" hx-target="#content">Interests</a></li>
+        </ul>
+    </nav>
+
+    <main id="content" class="animate__animated animate__zoomIn">
+        <header>
+            <h2 class="title">Home</h2>
+        </header>
+        <p>This is my home page for testing ideas built using HTMX. This may change at times as I experiment with ideas
+            I have.</p>
+        <p class="marginless">The source code for this site is available on <a
+                href="https://github.com/toilled/toille-htmx" target="_blank">this GitHub repository</a>.</p>
+    </main>
+</body>
+
+</html>
