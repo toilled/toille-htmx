@@ -22,21 +22,13 @@
             </li>
         </ul>
         <ul class="animate__animated animate__fadeInRight">
-            <li><a class="pointer" hx-post="pages/1" hx-trigger="click" hx-target="#content">Home</a></li>
-            <li><a class="pointer" hx-post="pages/2" hx-trigger="click" hx-target="#content">About</a></li>
-            <li><a class="pointer" hx-post="pages/3" hx-trigger="click" hx-target="#content">Interests</a></li>
+            <li><a class="pointer" hx-get="pages/home" hx-trigger="click" hx-target="#content">Home</a></li>
+            <li><a class="pointer" hx-get="pages/about" hx-trigger="click" hx-target="#content">About</a></li>
+            <li><a class="pointer" hx-get="pages/interests" hx-trigger="click" hx-target="#content">Interests</a></li>
         </ul>
     </nav>
 
-    <main id="content" class="animate__animated animate__zoomIn">
-        <header>
-            <h2 class="title">Home</h2>
-        </header>
-        <p>This is my home page for testing ideas built using HTMX. This may change at times as I experiment with ideas
-            I have.</p>
-        <p class="marginless">The source code for this site is available on <a
-                href="https://github.com/toilled/toille-htmx" target="_blank">this GitHub repository</a>.</p>
-    </main>
+    <main id="content" class="animate__animated animate__zoomIn" hx-get="pages/home" hx-trigger="load">Loading...</main>
 </body>
 
 </html>
